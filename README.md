@@ -1,16 +1,77 @@
-# React + Vite
+# Moodify 🎵
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered music personality app that analyzes your vibe and curates the perfect playlist for you.
 
-Currently, two official plugins are available:
+## Live Demo
+[moodify.vercel.app](https://moodify-egl2naj31-oorrviis-projects.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- 11 unique personality questions to determine your music vibe
+- AI analysis powered by Claude to match your personality to one of 11 music moods
+- Song recommendations with direct Spotify links
+- Save your favorite playlists for later
+- Clean dark UI built with Tailwind CSS
 
-## React Compiler
+## Music Moods
+Melancholic, Chill/Lofi, Energetic, Intense/Rock, Romantic, Party, Gym, Focus/Study, Heartbreak, Nostalgic, Spiritual/Peace
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
+- **Frontend** — React + Vite
+- **Styling** — Tailwind CSS
+- **Routing** — React Router DOM
+- **AI** — Claude AI via OpenRouter API
+- **Deployment** — Vercel
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js
+- OpenRouter API key
+
+### Installation
+
+```bash
+git clone https://github.com/oorrvii/moodify.git
+cd moodify
+npm install
+```
+
+### Environment Variables
+Create a `.env` file in the root directory:
+```
+OPENROUTER_API_KEY=your_key_here
+```
+
+### Run locally
+```bash
+npm run dev
+```
+
+### Deploy
+```bash
+vercel --prod
+```
+
+## Project Structure
+```
+src/
+  components/
+    Navbar.jsx
+  pages/
+    Home.jsx
+    Results.jsx
+    Favorites.jsx
+  data/
+    questions.js
+  App.jsx
+api/
+  claude.js
+```
+
+## Screenshots
+## Screenshots
+![Home](./screenshots/)
+![Results](./screenshots/2\.png)
+
+## Author
+Made by [oorrvii](https://github.com/oorrvii)
