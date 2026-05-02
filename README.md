@@ -69,8 +69,8 @@ api/
 ```
 
 ## Screenshots
-![Home](./screenshots/)
-![Results](./screenshots/2\.png)
+![Home](./screenshots/homepage.png)
+![Results](./screenshots/resultpage.png)
 
 ## Author
 Made by [oorrvii](https://github.com/oorrvii)
