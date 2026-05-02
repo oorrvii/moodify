@@ -69,7 +69,6 @@ api/
 ```
 
 ## Screenshots
-## Screenshots
 ![Home](./screenshots/)
 ![Results](./screenshots/2\.png)
 
